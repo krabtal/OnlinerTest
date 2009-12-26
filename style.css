@@ -13,6 +13,8 @@ MARGIN: 0px 0px;}
 #fl {font-size: 11px; border-left: 1px solid #CCC;border-top: 1px solid #CCC;}
 #fl td {border-bottom: 1px solid #CCC;border-right: 1px solid #CCC; }
 
+.carea   {width: 460px; height: 140px;border:1px solid #666;font-size:11px;}
+.cinput   {width: 430px; height: 16px;border:1px solid #666;font-size:11px;}
 .input_filename {width: 300px;font-size:12px;}
 
 .pagination a {text-decoration: none; font-size: 11px;	font-weight: bold; padding: 2px 4px 3px 4px; margin-right:3px; border: 1px solid #FFF; background-color: #EEC; color: #000; }

@@ -17,19 +17,24 @@ if (isset($_REQUEST['fid'])) {
     $fdate = $res->date;
     include_once "./tpl/header.tpl";
     include "./tpl/file.tpl";
+    $pvevcid = 0;
     if ($cid != 0) {
-      $query = "select name, date, text from comments where cid=\"$cid\" and fid=\"$fid\"";
+      $query = "select prevcid, name, date, text from comments where cid=\"$cid\" and fid=\"$fid\"";
       $res = MySqlRow($query);
       if ($res) {
         $cn = $res->name;
         $cdate = $res->date;
         $ctext = $res->text;
+        $prevcid = $res->prevcid;
         if ($cname = "") $cname="Гость";
         include "./tpl/viewcomment.tpl";
       }
     }
     include "./tpl/addcomment.tpl";
-    $comments = GetComments($fid, $sid);
+    if ($prevcid) $prevlvllink = "./viewfile.php?fid=$fid&commentid=$prevcid";
+    else $prevlvllink="./viewfile.php?fid=$fid";
+    $toplvllink = "./viewfile.php?fid=$fid";
+    $comments = GetComments($fid, $cid);
     include "./tpl/comments.tpl";
     include_once "./php/footer.php";
     //    $comments = GetComments($fid)

@@ -20,6 +20,8 @@ if (isset($_REQUEST['email']))
       } else {
         $_SESSION['uid'] = $uid;
         $_SESSION['email'] = $email;
+        $query = "insert into historylog (uid, date, ip, browser) values($uid, now(), \"{$_SERVER['REMOTE_ADDR']}\", \"{$_SERVER['HTTP_USER_AGENT']}\")";
+        MySqlQuery($query);
         header("Location: ./index.php");
       }
     }

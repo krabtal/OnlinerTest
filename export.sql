@@ -2,11 +2,11 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ANSI';*/
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;*/
 
-CREATE USER fileuploader@localhost IDENTIFIED BY PASSWORD '*E56A114692FE0DE073F9A1DD68A00EEB9703F3F1';
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ "fileuploader" /*!40100 DEFAULT CHARACTER SET utf8 */;
+#
+# Database structure for database 'fileuploader'
+#
 
-GRANT ALL ON fileuploader.* TO db_audit@localhost;
 
 USE "fileuploader";
 
@@ -38,13 +38,6 @@ CREATE TABLE /*!32312 IF NOT EXISTS*/ "user" (
   UNIQUE KEY "uid" ("uid"),
   KEY "uid_2" ("uid")
 ) AUTO_INCREMENT=1 /*!40100 DEFAULT CHARSET=utf8*/;
-
-CREATE TABLE /*!32312 IF NOT EXISTS*/ "historylog" (
-  "uid" int(10) unsigned NOT NULL,
-  "date" datetime NOT NULL,
-  "ip" varchar(50) default NULL,
-  "browser" varchar(150) default NULL
-) /*!40100 DEFAULT CHARSET=utf8*/;
 
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE;*/
