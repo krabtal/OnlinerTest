@@ -23,7 +23,7 @@ $servername = "http://{$_SERVER['SERVER_NAME']}";
 $res = MySqlQuery($query2);
 while ($row = mysql_fetch_object($res)) {
   $fl.="<tr><td>{$row->file_id}</td><td><a href=\"viewfile.php?fid={$row->file_id}\">{$row->filename}";
-  $fl.="</td><td>{$row->date}</td><td>$servername/$uid/{$row->filename}</td></tr>";
+  $fl.="</td><td>{$row->date}</td><td><a href=\"$servername/$uid/{$row->filename}\" onclick=\"document.location.href='./save.php?fid={$row->file_id}';return false;\">$servername/$uid/{$row->filename}</a></td></tr>";
 }
 mysql_free_result($res);
 if ($fl == "") {
