@@ -1,0 +1,30 @@
+﻿BODY {BACKGROUND-COLOR: #FFFFFF; COLOR: #666;
+FONT: 11px verdana, tahoma, sans-serif; line-height: 15px; text-align: left;
+MARGIN: 0px 0px;}
+
+.login {FONT: 12px verdana, tahoma, sans-serif;}
+#comments {FONT: 11px verdana, tahoma, sans-serif;border: 1px solid #CCC; margin: 5px;padding: 5px;}
+#viewcomment {FONT: 11px verdana, tahoma, sans-serif;border: 1px solid #CCC; margin: 5px;padding: 5px;}
+#addcomment {FONT: 11px verdana, tahoma, sans-serif;border: 1px solid #CCC; margin: 5px;padding: 5px;}
+#file {FONT: 11px verdana, tahoma, sans-serif;border: 1px solid #CCC; margin: 5px;padding: 5px;}
+#upload {FONT: 12px verdana, tahoma, sans-serif;border: 1px solid #CCC;}
+#filelist {font-size: 12px;width: 100%;}
+
+#fl {font-size: 11px; border-left: 1px solid #CCC;border-top: 1px solid #CCC;}
+#fl td {border-bottom: 1px solid #CCC;border-right: 1px solid #CCC; }
+
+.input_filename {width: 300px;font-size:12px;}
+
+.pagination a {text-decoration: none; font-size: 11px;	font-weight: bold; padding: 2px 4px 3px 4px; margin-right:3px; border: 1px solid #FFF; background-color: #EEC; color: #000; }
+.pagination a:hover {font-size: 11px; padding: 2px 4px 3px 4px; margin-right:3px; border: 1px solid #FFF; background-color: #AA8; color: #FFF; }
+.pagination a.active {background-color: #BB9; font-weight: bold; color: #FFF; }
+
+#header { height: 50px; width: 100%;} 
+
+
+#rbuttons { list-style: none; margin: 0; padding: 0;  border: none;}
+#rbuttons {width: 177px;border-right: 1px solid #999; padding: 0 0 0 0; FONT: 11px verdana; font-weight: bold; background-color: #999; color: #666;}
+#rbuttons ul {list-style: none; margin: 0; padding: 0; border: none;}
+#rbuttons li {border-bottom: 1px solid #999; margin: 0;}
+#rbuttons li a {display: block;padding: 1px 0px 2px 20px;background-color: #CCC; color: #666; text-decoration: none; width: auto; }
+#rbuttons li a:hover {background-color: #999; color: #FFF; }
